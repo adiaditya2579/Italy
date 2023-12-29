@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-medium;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image:url(https://img.freepik.com/free-photo/beautiful-view-lights-manarola-village-cinque-terre-italy_181624-9941.jpg?w=1800&t=st=1703475857~exp=1703476457~hmac=56c4243e42636a596ad512eaea54a1fd43cf37804560a8b565233d61783bbb5a);
+    background-size: cover;
+    background-position: center;
+}
+
+#nav{
+    width: 100%;
+    height: 13%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px; 
+    color: aliceblue;
+}
+#nav i{
+    display: none;
+}
+
+#nright {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+#nright a{
+    color: aliceblue;
+    text-decoration: none; 
+}
+#nright a:nth-child(1){
+    border-bottom: 2px solid white;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    height: 100%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.219);
+    gap: 60px;
+    
+}
+#left #scroll{
+    color: #fff;
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    font-size: 1.3rem;
+    opacity: 0.5;
+
+}
+#line{
+    opacity: 0.5;
+    position: absolute;
+    bottom: -240%;
+    width: 110px;  
+    transform: translate(50%, 50%) rotate(90deg); 
+}
+
+
+
+ 
+#left .place{
+    color: aliceblue;
+    opacity: 0.7;
+    position: relative;
+    
+}
+#left .place:nth-child(2) h4{
+    font-size: 30px;
+    white-space: nowrap;
+}
+#left .place:nth-child(2) h6{
+    font-size: 15px;
+    white-space: nowrap;
+}
+.place h4{
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 18px;
+    opacity: 20;
+    border-bottom: 1px solid white ;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.place h6{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+#right{
+    height: 100%;
+    width: 75%;
+    position: relative;
+}
+#right #text{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    border-bottom: 2px solid white;
+    
+}
+#text h4{
+    font-size: 45px;
+    font-weight: 200;
+}
+#text h1{
+    font-size: 200px;
+    font-weight: 200;
+}
+#input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: aliceblue;
+}
+#text input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+#text input::placeholder{
+    color: aliceblue;
+    font-size: 1.3rem;
+    opacity: 0.5;
+}
+#right small{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: aliceblue;
+    opacity: 0.5;
+}
+
+@media(max-width: 500px){
+    #nav{
+        padding: 0px 20px; 
+        height: 10%;
+    }
+    #nav i{
+        display: initial;
+        font-size: 30px;
+    }
+    #nright{
+        display: none;
+    }
+    #left{
+        width: 100%;
+        height: 60%;
+        gap: 30px;
+    }
+}
